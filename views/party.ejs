@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/header') %>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div style="margin-top:100px;">
+  <center>
+    <div class="container">
+        <div class="row">
+            <div class="card col-md-6" style="width:300px; color: white;">
+                <img class="card-img-top" src="club.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Dancing floor</h4>
+                    <p class="card-text"></p>
+                    <p class="card-text">₹ 50,000/-day</p>
+                    
+                    <form action="/party" method="post">
+                          <input type="text" name="name" placeholder="Booker name"> <br>  <br>
+                          <input type="text" name="address" placeholder="address">   <br><br>
+                          <input type="datetime-local"  name="date" placeholder="date">   <br><br>
+                          <input type="submit" value="Add Name">
+                    </form>
+                  
+                </div>
+            </div>
+
+            <div class="card col-md-6" style="width:300px; color: white;">
+                <img class="card-img-top" src="wedding-banner.jpeg" alt="Card image" style="width:150%">
+                <div class="card-body">
+                    <h4 class="card-title">Dancing floor</h4>
+                    <p class="card-text"></p>
+                    <p class="card-text">₹ 2,00,000/-day</p>
+
+                    <form action="/wed" method="post">
+
+                        <input type="text" name="name" placeholder="Booker name"> <br>  <br>
+                        <input type="text" name="address" placeholder="address">   <br><br>
+                        <input type="datetime-local"  name="date" placeholder="date">   <br><br>
+                        <input type="submit" value="Add Name">
+                  </form>
+
+                  </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+  <%- include('partials/footer') %>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+        src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>
